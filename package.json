@@ -1,0 +1,51 @@
+{
+  "name": "ayaan-script-plus",
+  "displayName": "AyaanScript+",
+  "description": "Syntax highlighting and support for AyaanScript+ (.ayaan files)",
+  "version": "1.0.0",
+  "publisher": "ayaanhassan",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:ayaan"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "ayaan",
+        "aliases": ["AyaanScript+"],
+        "extensions": [".ayaan"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ayaan",
+        "scopeName": "source.ayaan",
+        "path": "./syntaxes/ayaan.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "ayaan",
+        "path": "./snippets/ayaan.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npx tsc -p ./",
+    "compile": "npx tsc -p ./",
+    "watch": "npx tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0",
+    "vscode": "^1.1.37"
+  }
+}

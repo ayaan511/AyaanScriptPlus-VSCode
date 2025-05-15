@@ -1,0 +1,28 @@
+{
+  "scopeName": "source.ayaan",
+  "name": "AyaanScript+",
+  "patterns": [
+    {
+      "name": "keyword.control.ayaan",
+      "match": "\\b(psyska|set|add|asknum|pause|repeat|end repeat|reverse|uppercase|plaayaan|exit|serport|serve|servefile|log|end|aspkg|install|remove|list|asport)\\b"
+    },
+    {
+      "name": "string.ayaan",
+      "match": "\"([^\"\\\\]|\\\\.)*\""
+    },
+    {
+      "name": "variable.ayaan",
+      "match": "\\{[a-zA-Z_][a-zA-Z0-9_]*\\}"
+    },
+
+    {
+  "name": "comment.line.ayaan",
+  "match": "(::.*)$"
+},
+
+{
+      "name": "number.ayaan",
+      "match": "\\b\\d+\\b"
+    }
+  ]
+}

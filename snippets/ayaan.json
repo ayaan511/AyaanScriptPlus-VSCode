@@ -1,0 +1,27 @@
+{
+  "Set Variable": {
+    "prefix": "set",
+    "body": "set ${1:variable} = ${2:value}",
+    "description": "Set a variable"
+  },
+  "Add": {
+    "prefix": "add",
+    "body": "add ${1:variable}, ${2:value}",
+    "description": "Add value to variable"
+  },
+  "Print": {
+    "prefix": "psyska",
+    "body": "psyska -/ \"${1:Hello World}\"",
+    "description": "Print text"
+  },
+  "Repeat Loop": {
+    "prefix": "repeat",
+    "body": ["repeat ${1:5} times", "\t$2", "end repeat"],
+    "description": "Repeat block"
+  },
+  "Serve Web": {
+  "prefix": "serve",
+  "body": ["serport = ${1:3000}", "servefile \"${2:index.html}\""],
+  "description": "Start a web server"
+}
+}
