@@ -2,7 +2,7 @@
   "name": "ayaan-script-plus",
   "displayName": "AyaanScript+",
   "description": "Syntax highlighting and support for AyaanScript+ (.ayaan files)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "ayaanhassan",
   "icon": "icon.png",
   "engines": {
